@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color : black;
+    color: whitesmoke;
+    margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+
+#contact_bar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #333333;
+    color: whitesmoke;
+    font-size: 24px;
+    padding: 40px;
+    z-index: 9999;
+    box-shadow: 0 10px 30px black;
+}
+
+
+.contact_logo {
+    height: 75px;
+    align-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.contact_email {
+    align-content: center;
+    text-align: end;
+    flex-grow: 10;
+}

@@ -1,0 +1,92 @@
+
+#header {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    color: whitesmoke;
+}
+
+#header h1{
+    font-size: 5em;
+}
+
+#header h2{
+    font-size: 2em;
+}
+
+#reel_video {
+    display: block;
+    position: inherit;
+    min-width: 100%;
+    width : 100%;
+    z-index: -1;
+}
+
+
+#reel_overlay {
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    width : 100%;
+    height : 100%; 
+    background-color: #0000005F;
+    text-shadow: 10px 10px 30px black;
+}
+
+
+
+
+
+.subpage_block {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-width: 100%;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.subpage_block_overlay {
+    text-align: center;
+    align-content: center;
+    font-size: 3em;
+    color: whitesmoke;
+    text-shadow: 10px 10px 30px black;
+    margin: 150px;
+}
+
+.going_arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #333333;
+    color: whitesmoke;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .2s ease;
+    align-content:center;
+    text-align:center;
+    font-size:0px;
+}
+
+.subpage_block:hover .going_arrow {
+  width: 10%;
+  right: 0;
+  font-size:2em;
+}
+
+
+#subpage_block_cgi {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/cgi_steel-wool.jpg");
+}
+
+#subpage_block_editing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/cgi_goldenroad-01.jpg");
+}
+
+#subpage_block_misc {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/code_3np1-02.jpg");
+}
