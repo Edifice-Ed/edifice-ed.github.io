@@ -10,6 +10,13 @@
 .gallery img {
     padding: 2px;
     max-width: 24%;
+    object-fit: cover;
+}
+
+.gallery img:hover{
+    border: 3px solid whitesmoke;
+    margin: -3px;
+    z-index: 2;
 }
 
 @media screen and (max-width: 800px) {
@@ -32,60 +39,34 @@
 #gallery_modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    padding-top: 100px;/
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: #000000;
-    background-color: rgba(0,0,0,0.4);
+    background-color: #000000B0;
+    text-align: center;
 }
 
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
+#gallery_modal_window {
+    position: relative;
+    height: 80%;
+    margin: auto;
+    padding-top: 20px;
 }
 
 
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+#gallery_modal_window img {
+    height: 100%;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+#gallery_modal_window h3 {
+
 }
 
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
+#gallery_modal_window p {
 
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
 }

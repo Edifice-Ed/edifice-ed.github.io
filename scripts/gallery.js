@@ -9,7 +9,7 @@ async function loadGallery(json_path, gallery){
 
         var img = document.createElement('img');
         img.src = item.thumbnail_path;
-        img.onclick = showGalleryModal.bind(item.image_path, item.title, item.caption);
+        img.onclick = showGalleryModal.bind(undefined, item.image_path, item.title, item.caption);
         gallery.appendChild(img);
     }
 }
@@ -19,18 +19,15 @@ async function loadGallery(json_path, gallery){
 
 function showGalleryModal(image_path, title, caption){
     var modal = document.getElementById("gallery_modal");
+
+    modal.getElementsByTagName('img')[0].src = image_path;
+    modal.getElementsByTagName('h3')[0].innerHTML = title;
+    modal.getElementsByTagName('p')[0].innerHTML = caption;
+
     modal.style.display="block";
 }
 
 
 function hideGalleryModal(){
     document.getElementById("gallery_modal").style.display="none";
-}
-
-
-window.onclick = function(event) {
-    var modal = document.getElementById("gallery_modal");
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
 }
