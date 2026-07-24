@@ -58,7 +58,10 @@ a {
 
 
 #footer {
-
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+    color: #9a9a9a;
+    font-size: 18px;
 }
 
 
