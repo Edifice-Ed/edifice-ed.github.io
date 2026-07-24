@@ -1,0 +1,34 @@
+{
+    "gallery_items":[
+        {
+            "image_path": "/media/cgi_mannequin-01.jpg",
+            "thumbnail_path": "/thumbs/cgi_mannequin-01.jpg",
+            "title": "Boris",
+            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
+        },
+        {
+            "image_path": "/media/cgi_mannequin-01.jpg",
+            "thumbnail_path": "/thumbs/cgi_mannequin-01.jpg",
+            "title": "Boris",
+            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
+        },
+        {
+            "image_path": "/media/cgi_mannequin-01.jpg",
+            "thumbnail_path": "/thumbs/cgi_mannequin-01.jpg",
+            "title": "Boris",
+            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
+        },
+        {
+            "image_path": "/media/cgi_mannequin-01.jpg",
+            "thumbnail_path": "/thumbs/cgi_mannequin-01.jpg",
+            "title": "Boris",
+            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
+        },
+        {
+            "image_path": "/media/cgi_mannequin-01.jpg",
+            "thumbnail_path": "/thumbs/cgi_mannequin-01.jpg",
+            "title": "Boris",
+            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
+        }
+    ]
+}

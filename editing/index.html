@@ -3,28 +3,23 @@
 <head>
 
     <link rel="stylesheet" href="/stylesheets/common.css">
-    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="/stylesheets/editing.css">
+    <link rel="stylesheet" href="/stylesheets/slideshow.css">
 
     <!-- TODO favicon -->
-    <title>Home | Edward Pinkava</title>
+    <title>Editing | Edward Pinkava</title>
+
 
 </head>
 <body>
 
-    <div id="header">
-
-        <div id="reel_overlay">
-            <h1>Edward Pinkava</h1>
-            <h2>Editor &#8213; VFX Artist &#8213; Etcetera</h2>
-        </div>
-
-        <video id="reel_video" autoplay muted loop>
-            <source src="home/header_reel.mp4" type="video/mp4">
-        </video>
-
-    </div>
+    <!-- CONTACT BAR -->
 
     <div id="contact_bar">
+
+        <a href="/index.html" id="home_button">
+            &#10094;&nbsp;&nbsp;Home
+        </a>
 
         <!-- Youtube -->
         <div class="contact_logo">
@@ -75,42 +70,145 @@
                 edwardpinkava@gmail.com
             </a>
         </div>
+    </div>
 
 
 
+
+    <!-- PAGE BODY -->
+
+
+
+
+    
+    <div id="head_banner">
+        <div id="head_banner_overlay">
+            Editing
+        </div>
+    </div>
+
+    
+    <div class="body_entry" style="margin-top: 50px">
+        <p>
+            Sundry examples of my Editing work.
+        </p>
+    </div>
+
+
+    <div class="vertical_divider"></div>
+
+
+    <div class="body_entry">
+
+        <h3>Editing Reel</h3>
+
+        <iframe
+            class="embedded_video_16_9" 
+            src="https://www.youtube.com/embed/JbcOwUfNv1k" 
+            width="640" height="360"
+            allowfullscreen=true
+            frameborder="0"
+        >
+        </iframe>
+
+    </div>
+    
+
+
+    <div class="vertical_divider"></div>
+
+
+
+    <div class="body_entry">
+
+        <h3>
+            Stuff stuff stuff
+        </h3>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+
+
+
+        <div class="slideshow">
+
+            <div class="slideshow_slide code_fractal">
+                <img src="/media/code_fractal-01.jpg">
+                <div class="slideshow_caption">
+                    Caption One
+                </div>
+            </div>
+
+            <div class="slideshow_slide code_fractal">
+                <img src="/media/code_fractal-02.jpg">
+                <div class="slideshow_caption">
+                    Caption Two
+                </div>
+            </div>
+
+            <div class="slideshow_slide code_fractal">
+                <img src="/media/code_fractal-03.jpg">
+                <div class="slideshow_caption">
+                    Caption Three
+                </div>
+            </div>
+
+
+            <a class="slideshow_prev" onclick="changeSlide(-1, 'code_fractal')">&#10094;</a>
+            <a class="slideshow_next" onclick="changeSlide(1, 'code_fractal')">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div class="slideshow_dots">
+          <span class="slideshow_dot code_fractal" onclick="setSlide(0, 'code_fractal')"></span> 
+          <span class="slideshow_dot code_fractal" onclick="setSlide(1, 'code_fractal')"></span> 
+          <span class="slideshow_dot code_fractal" onclick="setSlide(2, 'code_fractal')"></span> 
+        </div>
 
     </div>
 
 
-    <a href="cgi/index.html">
-        <div class="subpage_block" id="subpage_block_cgi">
-            <div class="subpage_block_overlay">
-                CGI
-            </div>
-            <div class="going_arrow">&#10095;</div>
-        </div>
-    </a>
 
 
-    <a href="editing/index.html">
-        <div class="subpage_block" id="subpage_block_editing">
-            <div class="subpage_block_overlay">
-                Editing
-            </div>
-            <div class="going_arrow">&#10095;</div>
-        </div>
-    </a>
+    <!-- Slideshow controls -->
 
+    <script>
+        let slideshow_states = {
+            "code_fractal": 0
+        };
+        setSlide(0, "code_fractal");
 
-    <a href="cgi/index.html">
-        <div class="subpage_block" id="subpage_block_misc">
-            <div class="subpage_block_overlay">
-                Miscellanea
-            </div>
-            <div class="going_arrow">&#10095;</div>
-        </div>
-    </a>
+        function changeSlide(n, slideshow_name) {
+            setSlide(slideshow_states[slideshow_name] + n, slideshow_name);
+        }
+
+        function setSlide(n, slideshow_name) {
+            slideshow_states[slideshow_name] = n;
+
+            let i;
+            let slides = document.getElementsByClassName("slideshow_slide " + slideshow_name);
+            let dots = document.getElementsByClassName("slideshow_dot " + slideshow_name);
+
+            if (n >= slides.length) {slideshow_states[slideshow_name] = 0}   
+            if (n < 0) {slideshow_states[slideshow_name] = slides.length - 1}
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" slideshow_dot_active", "");
+            }
+
+            slides[slideshow_states[slideshow_name]].style.display = "block";  
+            dots[slideshow_states[slideshow_name]].className += " slideshow_dot_active";
+        }
+
+    </script>
+
 
 
 </body>
 </html>
+

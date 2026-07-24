@@ -60,3 +60,55 @@ a {
 #footer {
 
 }
+
+
+#head_banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-width: 100%;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+#head_banner_overlay {
+    text-align: center;
+    align-content: center;
+    font-size: 3em;
+    color: whitesmoke;
+    text-shadow: 10px 10px 30px black;
+    margin: 50px;
+}
+
+
+
+.body_entry {
+    padding: 0 10% 0 10%;
+}
+
+.body_entry h3 {
+
+}
+
+
+.body_entry p {
+
+}
+
+
+.vertical_divider {
+    display: block;
+    background-color: #333333;
+    margin: 30px 30px 50px 30px;
+    padding-top: 2px; 
+}
+
+
+.embedded_video_16_9 {
+    aspect-ratio: 16 / 9;
+    height: 100%;
+    width: 100%;
+}
+

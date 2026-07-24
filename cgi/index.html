@@ -4,6 +4,10 @@
 
     <link rel="stylesheet" href="/stylesheets/common.css">
     <link rel="stylesheet" href="/stylesheets/cgi.css">
+    <link rel="stylesheet" href="/stylesheets/gallery.css">
+    <link rel="stylesheet" href="/stylesheets/slideshow.css">
+
+    <script src="/scripts/gallery.js"></script>
 
     <!-- TODO favicon -->
     <title>CGI | Edward Pinkava</title>
@@ -148,6 +152,46 @@
     </div>
 
 
+
+    <div class="vertical_divider"></div>
+    
+    <div class="body_entry">
+
+        <h3>Gallery of Things</h3>
+
+        <!-- Begin Gallery -->
+
+        <div id="gallery_test" class="gallery">
+            <!-- Loaded by script -->
+        </div>
+
+
+        <div id="gallery_modal">
+
+            <div class="modal_content">
+                <div class="modal_header">
+                  <span class="close" onclick="hideGalleryModal()">&times;</span>
+                  <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the Modal Body</p>
+                  <p>Some other text...</p>
+                </div>
+                <div class="modal-footer">
+                  <h3>Modal Footer</h3>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script>
+           loadGallery("/cgi/gallery.json", document.getElementById("gallery_test")); 
+        </script>
+
+        <!-- End Gallery -->
+
+    </div>
 
     <div class="vertical_divider"></div>
 
