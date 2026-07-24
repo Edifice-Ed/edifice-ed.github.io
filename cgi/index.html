@@ -3,6 +3,7 @@
 <head>
 
     <link rel="stylesheet" href="/stylesheets/common.css">
+    <link rel="stylesheet" href="/stylesheets/cgi.css">
 
     <!-- TODO favicon -->
     <title>CGI | Edward Pinkava</title>
@@ -11,10 +12,12 @@
 </head>
 <body>
 
+    <!-- CONTACT BAR -->
+
     <div id="contact_bar">
 
         <a href="/index.html" id="home_button">
-            &lt;&nbsp;&nbsp;Home
+            &#10094;&nbsp;&nbsp;Home
         </a>
 
         <!-- Youtube -->
@@ -70,40 +73,168 @@
 
 
 
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
-    <p>TODO: content here!</p>
+
+    <!-- PAGE BODY -->
+
+
+
+
+    
+    <div id="head_banner">
+        <div id="head_banner_overlay">
+            CGI
+        </div>
+    </div>
+
+    
+    <div class="body_entry" style="margin-top: 50px">
+        <p>
+            Sundry examples of my Computer Graphics work.
+        </p>
+    </div>
+
+
+    <div class="vertical_divider"></div>
+
+
+
+    <div class="body_entry">
+        <h3>
+            Buddy Bot
+        </h3>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+
+
+
+        
+        <div class="slideshow">
+
+            <div class="slideshow_slide buddy_bot">
+                <img src="/media/cgi_buddy-bot-01.jpg">
+                <div class="slideshow_caption">
+                    Caption Text
+                </div>
+            </div>
+
+            <div class="slideshow_slide buddy_bot">
+                <img src="/media/cgi_buddy-bot-02.jpg">
+                <div class="slideshow_caption">
+                    Caption Two
+                </div>
+            </div>
+
+            <div class="slideshow_slide buddy_bot">
+                <img src="/media/cgi_buddy-bot-03.jpg">
+                <div class="slideshow_caption">
+                    Caption Three
+                </div>
+            </div>
+
+            <a class="slideshow_prev" onclick="changeSlide(-1, 'buddy_bot')">&#10094;</a>
+            <a class="slideshow_next" onclick="changeSlide(1, 'buddy_bot')">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div class="slideshow_dots">
+          <span class="slideshow_dot buddy_bot" onclick="setSlide(0, 'buddy_bot')"></span> 
+          <span class="slideshow_dot buddy_bot" onclick="setSlide(1, 'buddy_bot')"></span> 
+          <span class="slideshow_dot buddy_bot" onclick="setSlide(2, 'buddy_bot')"></span> 
+        </div>
+
+    </div>
+
+
+
+    <div class="vertical_divider"></div>
+
+
+
+    <div class="body_entry">
+
+        <h3>
+            Glass Dispersion
+        </h3>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+
+
+
+        <div class="slideshow">
+
+            <div class="slideshow_slide glass_dispersion">
+                <img src="/media/cgi_glass-dispersion-01.jpg">
+                <div class="slideshow_caption">
+                    Caption Text
+                </div>
+            </div>
+
+            <div class="slideshow_slide glass_dispersion">
+                <img src="/media/cgi_glass-dispersion-02.jpg">
+                <div class="slideshow_caption">
+                    Caption Two
+                </div>
+            </div>
+
+            <a class="slideshow_prev" onclick="changeSlide(-1, 'glass_dispersion')">&#10094;</a>
+            <a class="slideshow_next" onclick="changeSlide(1, 'glass_dispersion')">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div class="slideshow_dots">
+          <span class="slideshow_dot glass_dispersion" onclick="setSlide(0, 'glass_dispersion')"></span> 
+          <span class="slideshow_dot glass_dispersion" onclick="setSlide(1, 'glass_dispersion')"></span> 
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Slideshow controls -->
+
+    <script>
+        let slideshow_states = {
+            "buddy_bot": 0,
+            "glass_dispersion": 0
+        };
+        setSlide(0, "buddy_bot");
+        setSlide(0, "glass_dispersion");
+
+        function changeSlide(n, slideshow_name) {
+            setSlide(slideshow_states[slideshow_name] + n, slideshow_name);
+        }
+
+        function setSlide(n, slideshow_name) {
+            slideshow_states[slideshow_name] = n;
+
+            let i;
+            let slides = document.getElementsByClassName("slideshow_slide " + slideshow_name);
+            let dots = document.getElementsByClassName("slideshow_dot " + slideshow_name);
+
+            if (n >= slides.length) {slideshow_states[slideshow_name] = 0}   
+            if (n < 0) {slideshow_states[slideshow_name] = slides.length - 1}
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" slideshow_dot_active", "");
+            }
+
+            slides[slideshow_states[slideshow_name]].style.display = "block";  
+            dots[slideshow_states[slideshow_name]].className += " slideshow_dot_active";
+        }
+
+    </script>
+
+
 
 </body>
 </html>

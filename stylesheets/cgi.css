@@ -1,0 +1,124 @@
+
+
+#head_banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/cgi_steel-wool.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-width: 100%;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+#head_banner_overlay {
+    text-align: center;
+    align-content: center;
+    font-size: 3em;
+    color: whitesmoke;
+    text-shadow: 10px 10px 30px black;
+    margin: 50px;
+}
+
+
+
+.body_entry {
+    padding: 0 10% 0 10%;
+}
+
+.body_entry h3 {
+
+}
+
+
+.body_entry p {
+
+}
+
+
+.vertical_divider {
+    display: block;
+    background-color: #333333;
+    margin: 30px 30px 50px 30px;
+    padding-top: 2px; 
+}
+
+
+
+
+
+
+
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow_slide {
+    display: none;
+    height: 400px;
+}
+
+.slideshow_slide img {
+    vertical-align: middle; 
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+
+.slideshow_prev, .slideshow_next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    padding: 0 20px 0 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2em;
+    user-select: none;
+    align-content: center;
+}
+
+.slideshow_next {
+    right: 0;
+}
+
+.slideshow_prev:hover, .slideshow_next:hover {
+    background-color: #000000B0;
+}
+
+
+.slideshow_caption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 12px 0px 12px 0px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color:#000000B0;
+}
+
+
+.slideshow_dots {
+    text-align: center;
+}
+
+.slideshow_dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #333333;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.slideshow_dot_active, .slideshow_dot:hover {
+    background-color: whitesmoke;
+}
