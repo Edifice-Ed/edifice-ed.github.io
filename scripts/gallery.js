@@ -1,9 +1,10 @@
 
-async function loadGallery(json_path, gallery){
+async function loadGallery(json_path, gallery_name){
 
     const response = await fetch(json_path);
     const json_data = await response.json();
 
+    var gallery = document.getElementById(gallery_name);
 
     for(const item of json_data.gallery_items){
 

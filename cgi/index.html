@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/stylesheets/slideshow.css">
 
     <script src="/scripts/gallery.js"></script>
+    <script src="/scripts/slideshow.js"></script>
 
     <!-- TODO favicon -->
     <title>CGI | Edward Pinkava</title>
@@ -65,7 +66,7 @@
 
 
         <div class="contact_cv_and_email">
-            <a href="cgi/index.html">
+            <a href="/resume.pdf">
                 cv
             </a>
             <div class="contact_spacer"></div>
@@ -78,9 +79,27 @@
 
 
 
+
+    <!-- GALLERY MODAL: every page that uses gallery.js must have exactly one of these -->
+
+    <div id="gallery_modal" onclick="hideGalleryModal()">
+        <div id="gallery_modal_window">
+
+            <img src="/thumbs/cgi_mannequin-01.jpg">
+
+            <h3>Title</h3>
+
+            <p>...</p>
+
+        </div>
+    </div>
+
+
+
+
+
+
     <!-- PAGE BODY -->
-
-
 
 
     
@@ -102,6 +121,9 @@
 
 
 
+
+
+
     <div class="body_entry">
         <h3>
             Buddy Bot
@@ -114,80 +136,41 @@
 
 
         
-        <div class="slideshow">
-
-            <div class="slideshow_slide buddy_bot">
-                <img src="/media/cgi_buddy-bot-01.jpg">
-                <div class="slideshow_caption">
-                    Caption Text
-                </div>
-            </div>
-
-            <div class="slideshow_slide buddy_bot">
-                <img src="/media/cgi_buddy-bot-02.jpg">
-                <div class="slideshow_caption">
-                    Caption Two
-                </div>
-            </div>
-
-            <div class="slideshow_slide buddy_bot">
-                <img src="/media/cgi_buddy-bot-03.jpg">
-                <div class="slideshow_caption">
-                    Caption Three
-                </div>
-            </div>
-
-            <a class="slideshow_prev" onclick="changeSlide(-1, 'buddy_bot')">&#10094;</a>
-            <a class="slideshow_next" onclick="changeSlide(1, 'buddy_bot')">&#10095;</a>
-
-        </div>
-        <br>
-
-        <div class="slideshow_dots">
-          <span class="slideshow_dot buddy_bot" onclick="setSlide(0, 'buddy_bot')"></span> 
-          <span class="slideshow_dot buddy_bot" onclick="setSlide(1, 'buddy_bot')"></span> 
-          <span class="slideshow_dot buddy_bot" onclick="setSlide(2, 'buddy_bot')"></span> 
+        <div id="buddy_bot_slideshow">
+            <!-- Populated by script -->
         </div>
 
+        <!-- Slideshow setup -->
+        <script>
+            loadSlideshow("/cgi/buddy_bot_slides.json", "buddy_bot_slideshow");
+        </script>
+ 
     </div>
-
-
 
     <div class="vertical_divider"></div>
     
+
+
+
+
+
     <div class="body_entry">
 
         <h3>Gallery of Things</h3>
 
-        <!-- Begin Gallery -->
 
         <div id="gallery_test" class="gallery">
-            <!-- Loaded by script -->
+            <!-- Populated by script -->
         </div>
-
-
-        <div id="gallery_modal" onclick="hideGalleryModal()">
-            <div id="gallery_modal_window">
-
-                <img src="/thumbs/cgi_mannequin-01.jpg">
-
-                <h3>Title</h3>
-
-                <p>...</p>
-
-            </div>
-        </div>
-
 
         <script>
-           loadGallery("/cgi/gallery.json", document.getElementById("gallery_test")); 
+           loadGallery("/cgi/gallery.json", "gallery_test"); 
         </script>
-
-        <!-- End Gallery -->
 
     </div>
 
     <div class="vertical_divider"></div>
+
 
 
 
@@ -201,37 +184,18 @@
             Quid modo de me dixisti, puerule? Scias te velim me primum in classe mea in Navy Seals graduatum esse, et in multis incursionibus secretis in Al-Quaedam implicatum esse, et plus quam trecentas caedes confirmatas habere. In bello gorillarum exercitatus sum et summus sagittarius in omnibus copiis armatae Americanis sum. Mihi nihil es nisi aliud scopus. Te delebo cum praecisione qualis numquam antea in hac Terra visa est, memento verborum meorum. Putasne te impune facere posse ista mihi per interrete dicendo? Cogita iterum, scelerate. Dum loquimur, rete meum secretum speculatorum per Civitates Foederatas contingo et inscriptionem tuam IP nunc investigatur, ita te ad tempestatem para, vermiculus. Tempestatem quae rem illam miserabilem quam vitam tuam vocas delet. Mortuus es, puer. Ubivis, quandocumque esse possum, et te plus quam septingentis modis necare possum, et id nudis manibus meis. Non solum in proelio sine armis late exercitatus sum, sed etiam ad totum armamentarium Classiariorum Marinorum Civitatum Foederatarum aditum habeo, quo ad plenissimam amplitudinem utar ut miserum tuum clunem e facie continentis deleam, stercus. Si modo scire potuisses quam nefariam ultionem ingeniosum tuum commentarium in te allaturum esset, fortasse linguam tuam retinuisses. Sed non potuisti, non fecisti, et nunc pretium pendis, stulte mehercule. Furorem in te effundam et in eo submergeris. Mortuus es, puer.
         </p>
 
-
-
-        <div class="slideshow">
-
-            <div class="slideshow_slide glass_dispersion">
-                <img src="/media/cgi_glass-dispersion-01.jpg">
-                <div class="slideshow_caption">
-                    Caption Text
-                </div>
-            </div>
-
-            <div class="slideshow_slide glass_dispersion">
-                <img src="/media/cgi_glass-dispersion-02.jpg">
-                <div class="slideshow_caption">
-                    Caption Two
-                </div>
-            </div>
-
-            <a class="slideshow_prev" onclick="changeSlide(-1, 'glass_dispersion')">&#10094;</a>
-            <a class="slideshow_next" onclick="changeSlide(1, 'glass_dispersion')">&#10095;</a>
-
+        
+        <div id="glass_dispersion_slideshow">
+            <!-- Populated by script -->
         </div>
-        <br>
 
-        <div class="slideshow_dots">
-          <span class="slideshow_dot glass_dispersion" onclick="setSlide(0, 'glass_dispersion')"></span> 
-          <span class="slideshow_dot glass_dispersion" onclick="setSlide(1, 'glass_dispersion')"></span> 
-        </div>
+        <!-- Slideshow setup -->
+        <script>
+            loadSlideshow("/cgi/glass_dispersion_slides.json", "glass_dispersion_slideshow");
+        </script>
+ 
 
     </div>
-
 
 
     <div id="footer">
@@ -241,48 +205,6 @@
         <a href="/editing/index.html">Editing</a>&#8195;&#8213;&#8195;
         <a href="/misc/index.html">Miscellanea</a>
     </div>
-
-
-
-
-    <!-- Slideshow controls -->
-
-    <script>
-        let slideshow_states = {
-            "buddy_bot": 0,
-            "glass_dispersion": 0
-        };
-        setSlide(0, "buddy_bot");
-        setSlide(0, "glass_dispersion");
-
-        function changeSlide(n, slideshow_name) {
-            setSlide(slideshow_states[slideshow_name] + n, slideshow_name);
-        }
-
-        function setSlide(n, slideshow_name) {
-            slideshow_states[slideshow_name] = n;
-
-            let i;
-            let slides = document.getElementsByClassName("slideshow_slide " + slideshow_name);
-            let dots = document.getElementsByClassName("slideshow_dot " + slideshow_name);
-
-            if (n >= slides.length) {slideshow_states[slideshow_name] = 0}   
-            if (n < 0) {slideshow_states[slideshow_name] = slides.length - 1}
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" slideshow_dot_active", "");
-            }
-
-            slides[slideshow_states[slideshow_name]].style.display = "block";  
-            dots[slideshow_states[slideshow_name]].className += " slideshow_dot_active";
-        }
-
-    </script>
-
-
 
 
 </body>

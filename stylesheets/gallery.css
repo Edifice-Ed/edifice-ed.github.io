@@ -64,9 +64,12 @@
 }
 
 #gallery_modal_window h3 {
-
+    max-width: 80%;
+    margin: auto;
+    padding: 18px 0 18px 0;
 }
 
 #gallery_modal_window p {
-
+    max-width: 80%;
+    margin: auto;
 }

@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="/stylesheets/editing.css">
     <link rel="stylesheet" href="/stylesheets/slideshow.css">
 
+    <script src="/scripts/slideshow.js"></script>
+
+
     <!-- TODO favicon -->
     <title>Editing | Edward Pinkava</title>
 
@@ -62,7 +65,7 @@
 
 
         <div class="contact_cv_and_email">
-            <a href="cgi/index.html">
+            <a href="/resume.pdf">
                 cv
             </a>
             <div class="contact_spacer"></div>
@@ -130,45 +133,18 @@
         </p>
 
 
-
-        <div class="slideshow">
-
-            <div class="slideshow_slide code_fractal">
-                <img src="/media/code_fractal-01.jpg">
-                <div class="slideshow_caption">
-                    Caption One
-                </div>
-            </div>
-
-            <div class="slideshow_slide code_fractal">
-                <img src="/media/code_fractal-02.jpg">
-                <div class="slideshow_caption">
-                    Caption Two
-                </div>
-            </div>
-
-            <div class="slideshow_slide code_fractal">
-                <img src="/media/code_fractal-03.jpg">
-                <div class="slideshow_caption">
-                    Caption Three
-                </div>
-            </div>
-
-
-            <a class="slideshow_prev" onclick="changeSlide(-1, 'code_fractal')">&#10094;</a>
-            <a class="slideshow_next" onclick="changeSlide(1, 'code_fractal')">&#10095;</a>
-
+        <div id="test_slideshow">
+            <!-- Populated by script -->
         </div>
-        <br>
 
-        <div class="slideshow_dots">
-          <span class="slideshow_dot code_fractal" onclick="setSlide(0, 'code_fractal')"></span> 
-          <span class="slideshow_dot code_fractal" onclick="setSlide(1, 'code_fractal')"></span> 
-          <span class="slideshow_dot code_fractal" onclick="setSlide(2, 'code_fractal')"></span> 
-        </div>
+        <!-- Slideshow setup -->
+        <script>
+            loadSlideshow("/editing/test_slideshow_slides.json", "test_slideshow");
+        </script>
+
+
 
     </div>
-
 
     <div id="footer">
         &copy; Edward Pinkava 2026&#8195;&#8213;&#8195;
@@ -179,45 +155,5 @@
     </div>
 
 
-
-
-    <!-- Slideshow controls -->
-
-    <script>
-        let slideshow_states = {
-            "code_fractal": 0
-        };
-        setSlide(0, "code_fractal");
-
-        function changeSlide(n, slideshow_name) {
-            setSlide(slideshow_states[slideshow_name] + n, slideshow_name);
-        }
-
-        function setSlide(n, slideshow_name) {
-            slideshow_states[slideshow_name] = n;
-
-            let i;
-            let slides = document.getElementsByClassName("slideshow_slide " + slideshow_name);
-            let dots = document.getElementsByClassName("slideshow_dot " + slideshow_name);
-
-            if (n >= slides.length) {slideshow_states[slideshow_name] = 0}   
-            if (n < 0) {slideshow_states[slideshow_name] = slides.length - 1}
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" slideshow_dot_active", "");
-            }
-
-            slides[slideshow_states[slideshow_name]].style.display = "block";  
-            dots[slideshow_states[slideshow_name]].className += " slideshow_dot_active";
-        }
-
-    </script>
-
-
-
 </body>
 </html>
-
