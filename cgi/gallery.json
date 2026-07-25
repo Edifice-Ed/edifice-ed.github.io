@@ -1,58 +1,32 @@
 {
     "gallery_items":[
         {
-            "image_path": "/media/cgi_mannequin-01.jpg",
+            "image_paths": ["/media/cgi_mannequin-01.jpg"],
+            "captions": [],
             "thumbnail_path": "/thumbs/cgi_mannequin-01.jpg",
             "title": "Mannequin",
-            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
+            "main_caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
         },
         {
-            "image_path": "/media/cgi_ad-astra-01.jpg",
-            "thumbnail_path": "/thumbs/cgi_ad-astra-01.jpg",
-            "title": "Ad Astra",
-            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
-        },
-        {
-            "image_path": "/media/cgi_goldenroad-01.jpg",
-            "thumbnail_path": "/thumbs/cgi_goldenroad-01.jpg",
-            "title": "Golden Road",
-            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah ;alskdjf;alskdjf;aslkdjfas ;laskdjf ;alskdjf ;lksdjf ;lkasjd f;lkajsdf;lk jasd;lfkja;sldkfjas;ldkf kjaskld faksjdhflk jasdhflkj ashdlfkj hasldkjfh alskjdfh laksjdhf lkasjdhf lkajsdhf lkjashdf lkjashd flkjashd flkjasdh flkjashdf lkjashdf lkjashd flkjasdhf lkjasdhf lkajsdhf lkasjdfh Lorem Ipsum dolor sit amet consectetur blah blah blah ;alskdjf;alskdjf;aslkdjfas ;laskdjf ;alskdjf ;lksdjf ;lkasjd f;lkajsdf;lk jasd;lfkja;sldkfjas;ldkf kjaskld faksjdhflk jasdhflkj ashdlfkj hasldkjfh alskjdfh laksjdhf lkasjdhf lkajsdhf lkjashdf lkjashd flkjashd flkjasdh flkjashdf lkjashdf lkjashd flkjasdhf lkjasdhf lkajsdhf lkasjdfhLorem Ipsum dolor sit amet consectetur blah blah blah ;alskdjf;alskdjf;aslkdjfas ;laskdjf ;alskdjf ;lksdjf ;lkasjd f;lkajsdf;lk jasd;lfkja;sldkfjas;ldkf kjaskld faksjdhflk jasdhflkj ashdlfkj hasldkjfh alskjdfh laksjdhf lkasjdhf lkajsdhf lkjashdf lkjashd flkjashd flkjasdh flkjashdf lkjashdf lkjashd flkjasdhf lkjasdhf lkajsdhf lkasjdfhLorem Ipsum dolor sit amet consectetur blah blah blah ;alskdjf;alskdjf;aslkdjfas ;laskdjf ;alskdjf ;lksdjf ;lkasjd f;lkajsdf;lk jasd;lfkja;sldkfjas;ldkf kjaskld faksjdhflk jasdhflkj ashdlfkj hasldkjfh alskjdfh laksjdhf lkasjdhf lkajsdhf lkjashdf lkjashd flkjashd flkjasdh flkjashdf lkjashdf lkjashd flkjasdhf lkjasdhf lkajsdhf lkasjdfhLorem Ipsum dolor sit amet consectetur blah blah blah ;alskdjf;alskdjf;aslkdjfas ;laskdjf ;alskdjf ;lksdjf ;lkasjd f;lkajsdf;lk jasd;lfkja;sldkfjas;ldkf kjaskld faksjdhflk jasdhflkj ashdlfkj hasldkjfh alskjdfh laksjdhf lkasjdhf lkajsdhf lkjashdf lkjashd flkjashd flkjasdh flkjashdf lkjashdf lkjashd flkjasdhf lkjasdhf lkajsdhf lkasjdfhLorem Ipsum dolor sit amet consectetur blah blah blah ;alskdjf;alskdjf;aslkdjfas ;laskdjf ;alskdjf ;lksdjf ;lkasjd f;lkajsdf;lk jasd;lfkja;sldkfjas;ldkf kjaskld faksjdhflk jasdhflkj ashdlfkj hasldkjfh alskjdfh laksjdhf lkasjdhf lkajsdhf lkjashdf lkjashd flkjashd flkjasdh flkjashdf lkjashdf lkjashd flkjasdhf lkjasdhf lkajsdhf lkasjdfhLorem Ipsum dolor sit amet consectetur blah blah blah ;alskdjf;alskdjf;aslkdjfas ;laskdjf ;alskdjf ;lksdjf ;lkasjd f;lkajsdf;lk jasd;lfkja;sldkfjas;ldkf kjaskld faksjdhflk jasdhflkj ashdlfkj hasldkjfh alskjdfh laksjdhf lkasjdhf lkajsdhf lkjashdf lkjashd flkjashd flkjasdh flkjashdf lkjashdf lkjashd flkjasdhf lkjasdhf lkajsdhf lkasjdfhLorem Ipsum dolor sit amet consectetur blah blah blah ;alskdjf;alskdjf;aslkdjfas ;laskdjf ;alskdjf ;lksdjf ;lkasjd f;lkajsdf;lk jasd;lfkja;sldkfjas;ldkf kjaskld faksjdhflk jasdhflkj ashdlfkj hasldkjfh alskjdfh laksjdhf lkasjdhf lkajsdhf lkjashdf lkjashd flkjashd flkjasdh flkjashdf lkjashdf lkjashd flkjasdhf lkjasdhf lkajsdhf lkasjdfh"
-        },
-        {
-            "image_path": "/media/code_3np1-01.jpg",
-            "thumbnail_path": "/thumbs/code_3np1-01.jpg",
-            "title": "Code",
-            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
-        },
-        {
-            "image_path": "/media/code_3np1-02.jpg",
-            "thumbnail_path": "/thumbs/code_3np1-02.jpg",
-            "title": "Code",
-            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
-        },
-        {
-            "image_path": "/media/code_colorcube-01.jpg",
-            "thumbnail_path": "/thumbs/code_colorcube-01.jpg",
-            "title": "Code",
-            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
-        },
-        {
-            "image_path": "/media/code_fractal-01.jpg",
+            "image_paths": ["/media/code_fractal-01.jpg", "/media/code_fractal-02.jpg", "/media/code_fractal-03.jpg"],
+            "captions": [],
             "thumbnail_path": "/thumbs/code_fractal-01.jpg",
-            "title": "Fractal",
-            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
+            "title": "Fractals",
+            "main_caption": "You can have a caption for the whole group as a set..."
         },
         {
-            "image_path": "/media/code_fractal-02.jpg",
-            "thumbnail_path": "/thumbs/code_fractal-02.jpg",
-            "title": "Fractal",
-            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
+            "image_paths": ["/media/code_colorcube-01.jpg", "/media/code_prime-spiral-01.jpg"],
+            "captions": ["Or you can have", "captions on a per-image basis"],
+            "thumbnail_path": "/thumbs/code_colorcube-01.jpg",
+            "title": "",
+            "main_caption": ""
         },
         {
-            "image_path": "/media/code_fractal-03.jpg",
-            "thumbnail_path": "/thumbs/code_fractal-03.jpg",
-            "title": "Fractal",
-            "caption": "Lorem Ipsum dolor sit amet consectetur blah blah blah"
+            "image_paths": ["/media/cgi_buddy-bot-01.jpg", "/media/cgi_buddy-bot-02.jpg", "/media/cgi_buddy-bot-03.jpg"],
+            "captions": ["Or you can have both", null, "In any combination!"],
+            "thumbnail_path": "/thumbs/cgi_buddy-bot-01.jpg",
+            "title": "Or you can have both!",
+            "main_caption": "In any combination!"
         }
     ]
 }

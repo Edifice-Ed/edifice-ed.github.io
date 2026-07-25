@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/stylesheets/gallery.css">
     <link rel="stylesheet" href="/stylesheets/slideshow.css">
 
-    <script src="/scripts/gallery.js"></script>
     <script src="/scripts/slideshow.js"></script>
+    <script src="/scripts/gallery.js"></script>
 
     <!-- TODO favicon -->
     <title>CGI | Edward Pinkava</title>
@@ -85,7 +85,9 @@
     <div id="gallery_modal" onclick="hideGalleryModal()">
         <div id="gallery_modal_window">
 
-            <img src="/thumbs/cgi_mannequin-01.jpg">
+            <img id="gallery_modal_image" src="/thumbs/cgi_mannequin-01.jpg">
+
+            <div id="gallery_modal_slideshow"></div>
 
             <h3>Title</h3>
 

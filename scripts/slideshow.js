@@ -6,6 +6,11 @@ function changeSlide(n, slideshow_name) {
 }
 
 function setSlide(n, slideshow_name) {
+
+    if(event != undefined){
+        event.stopPropagation(); 
+    }
+
     slideshow_states[slideshow_name] = n;
 
     let i;
@@ -28,10 +33,14 @@ function setSlide(n, slideshow_name) {
 
 
 
-
-async function loadSlideshow(json_path, slideshow_name){
+// Given a data object and a target ID, populate the indicated div with a new slideshow.
+function constructSlideshow(data, slideshow_name){
 
     var slideshow = document.getElementById(slideshow_name);
+
+    // Erase existing slideshow content
+
+    slideshow.innerHTML = "";
 
 
     // Set up slideshow framework
@@ -60,36 +69,9 @@ async function loadSlideshow(json_path, slideshow_name){
     slideshow.appendChild(slideshow_dots);
 
 
-    
-    /*
-
-                <div class="slideshow">
-
-                <a class="slideshow_prev" onclick="changeSlide(-1, 'test_slideshow')">&#10094;</a>
-                <a class="slideshow_next" onclick="changeSlide(1, 'test_slideshow')">&#10095;</a>
-
-            </div>
-            <br>
-
-            <div class="slideshow_dots">
-
-            </div>
-    */
-
-
-    /*
-    var slideshow_core = slideshow.getElementsByTagName('div')[0];
-    var slideshow_dots = slideshow.getElementsByTagName('div')[1];
-    */
-
-    // Populate slides from json
-
-    const response = await fetch(json_path);
-    const json_data = await response.json();
-
     var index = 0;
 
-    for(const slide of json_data.slides){
+    for(const slide of data.slides){
 
         var slide_div = document.createElement('div');
         slide_div.className = "slideshow_slide " + slideshow_name;
@@ -98,11 +80,14 @@ async function loadSlideshow(json_path, slideshow_name){
         slide_image.src = slide.image_path;
         slide_div.appendChild(slide_image);
 
-        var slide_caption = document.createElement('div');
-        slide_caption.className ="slideshow_caption";
-        slide_caption.innerHTML = slide.caption;
-        slide_div.appendChild(slide_caption);
+        if(slide.caption != undefined){
+            var slide_caption = document.createElement('div');
+            slide_caption.className ="slideshow_caption";
+            slide_caption.innerHTML = slide.caption;
+            slide_div.appendChild(slide_caption);
 
+        }
+        
         slideshow_core.appendChild(slide_div);
 
 
@@ -118,3 +103,14 @@ async function loadSlideshow(json_path, slideshow_name){
     setSlide(0, slideshow_name);
 }
 
+
+
+// Load a JSON file as slideshow data into the slideshow div with the given ID
+async function loadSlideshow(json_path, slideshow_name){
+
+    const response = await fetch(json_path);
+    const json_data = await response.json();
+
+    constructSlideshow(json_data, slideshow_name);
+
+}

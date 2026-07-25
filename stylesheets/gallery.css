@@ -59,7 +59,14 @@
 }
 
 
-#gallery_modal_window img {
+#gallery_modal_slideshow {
+    display: none;
+    height: 100%;
+}
+
+
+#gallery_modal_image {
+    display: inline;
     height: 100%;
 }
 
