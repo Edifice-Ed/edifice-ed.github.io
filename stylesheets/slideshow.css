@@ -1,16 +1,21 @@
 .slideshow {
-    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     position: relative;
-    margin: auto;
 }
 
 .slideshow_slide {
     display: none;
-    height: 400px;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
 }
 
 .slideshow_slide img {
-    vertical-align: middle; 
     width:100%;
     height:100%;
     object-fit: contain;
@@ -30,10 +35,15 @@
     font-size: 2em;
     user-select: none;
     align-content: center;
+    z-index: 500;
 }
 
 .slideshow_next {
     right: 0;
+}
+
+.slideshow_prev {
+    left: 0;
 }
 
 .slideshow_prev:hover, .slideshow_next:hover {
@@ -55,6 +65,7 @@
 
 .slideshow_dots {
     text-align: center;
+    margin: 10px 0 10px 0;
 }
 
 .slideshow_dot {

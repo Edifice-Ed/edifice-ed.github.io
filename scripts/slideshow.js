@@ -62,8 +62,6 @@ function constructSlideshow(data, slideshow_name){
 
     slideshow.appendChild(slideshow_core);
 
-    slideshow.appendChild(document.createElement('br'));
-
     var slideshow_dots = document.createElement('div');
     slideshow_dots.className = "slideshow_dots";
     slideshow.appendChild(slideshow_dots);

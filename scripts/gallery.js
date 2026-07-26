@@ -29,7 +29,7 @@ function showGallerySingle(image_paths, captions, title, main_caption){
         // Single-image case
 
         modal_image.src = image_paths[0];
-        modal_image.style.display="inline";
+        modal_image.style.display="block";
         modal_slideshow.style.display="none";
         
 
@@ -45,14 +45,14 @@ function showGallerySingle(image_paths, captions, title, main_caption){
         constructSlideshow(slideshow_data, "gallery_modal_slideshow");
 
         modal_image.style.display="none";
-        modal_slideshow.style.display="inline";
+        modal_slideshow.style.display="block";
 
     }
 
     modal.getElementsByTagName('h3')[0].innerHTML = title;
     modal.getElementsByTagName('p')[0].innerHTML = main_caption;
 
-    modal.style.display="block";
+    modal.style.display="flex";
 }
 
 
