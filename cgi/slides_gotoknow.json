@@ -1,0 +1,18 @@
+{
+    "slides":[
+        {
+            "image_path": "/media/cgi_gotoknow-01.jpg"
+        },
+        {
+            "image_path": "/media/cgi_gotoknow-02.jpg"
+        },
+        {
+            "image_path": "/media/cgi_gotoknow-03.jpg"
+        },
+		{
+            "image_path": "/media/cgi_gotoknow-04.jpg"
+        }
+
+
+    ]
+}

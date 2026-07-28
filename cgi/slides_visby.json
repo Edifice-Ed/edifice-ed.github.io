@@ -1,0 +1,25 @@
+{
+    "slides":[
+        {
+            "image_path": "/media/cgi_visby-01.jpg"
+        },
+        {
+            "image_path": "/media/cgi_visby-02.jpg",
+			"caption": "Concept render only, this version of the product does not exist."
+        },
+        {
+            "image_path": "/media/cgi_visby-03.jpg"
+        },
+		{
+            "image_path": "/media/cgi_visby-04.jpg"
+        },
+		{
+            "image_path": "/media/cgi_visby-05.jpg"
+        },
+		{
+            "image_path": "/media/cgi_visby-06.jpg"
+        }
+
+
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "slides":[
+        {
+            "image_path": "/media/cgi_buddy-bot-01.jpg"
+        },
+        {
+            "image_path": "/media/cgi_buddy-bot-04.jpg",
+            "caption": ""
+        },
+        {
+            "image_path": "/media/cgi_buddy-bot-02.jpg",
+            "caption": "Playblast Preview"
+        },
+		{
+            "image_path": "/media/cgi_buddy-bot-03.jpg",
+            "caption": "Face Cards"
+        }
+
+
+    ]
+}
