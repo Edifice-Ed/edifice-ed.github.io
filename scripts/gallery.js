@@ -9,7 +9,7 @@ async function loadGallery(json_path, gallery_name){
     for(const item of json_data.gallery_items){
 
         var img = document.createElement('img');
-        img.src = item.thumbnail_path;
+        img.src = item.image_paths[0];
         img.onclick = showGallerySingle.bind(undefined, item.image_paths, item.captions, item.title, item.main_caption);
         gallery.appendChild(img);
     }

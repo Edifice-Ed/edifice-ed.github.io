@@ -3,112 +3,96 @@
         {
             "image_paths": ["/media/cgi_ad-astra-01.jpg","/media/cgi_ad-astra-02.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_ad-astra-01.jpg",
             "title": "Ad Astra",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/cgi_bali-01.jpg","/media/cgi_bali-02.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_bali-01.jpg",
             "title": "Bali Point Cloud",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/cgi_beam-01.jpg","/media/cgi_beam-02.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_beam-01.jpg",
             "title": "Satellite Beam",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/cgi_bubbles-01.jpg","/media/cgi_bubbles-02.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_bubbles-01.jpg",
             "title": "Bubbles in the City",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/cgi_helicopter-01.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_helicopter-01.jpg",
             "title": "Helicopter Rescue",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/cgi_goldenroad-01.jpg","/media/cgi_goldenroad-02.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_goldenroad-01.jpg",
             "title": "Golden Road",
             "main_caption": "Photoscanned and created a digital twin of The Pub at Golden Road in Atwater Village"
         },
 		{
             "image_paths": ["/media/cgi_nowfuture-01.jpg","/media/cgi_nowfuture-02.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_nowfuture-01.jpg",
             "title": "NowFuture DNA test",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/cgi_osmo-01.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_osmo-01.jpg",
             "title": "Nick DiGiovanni Kitchen",
             "main_caption": "Made a digital twin of the kitchen of YouTube Chef Nick DiGiovanni for an ad series"
         },
 		{
             "image_paths": ["/media/cgi_peak-01.jpg", "/media/cgi_peak-02.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_peak-01.jpg",
             "title": "The Peak Luxury Residences",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/cgi_pills-01.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_pills-01.jpg",
             "title": "Pill Spill",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/cgi_cloth-01.jpg","/media/cgi_cloth-02.jpg","/media/cgi_cloth-03.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_cloth-01.jpg",
             "title": "Cloth Simulation",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/cgi_glass-dispersion-01.jpg","/media/cgi_glass-dispersion-02.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_glass-dispersion-01.jpg",
             "title": "Glass Dispersion",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/cgi_dots-01.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_dots-01.jpg",
             "title": "Dot Screen Effect",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/code_fractal-01.jpg", "/media/code_fractal-02.jpg", "/media/code_fractal-03.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/code_fractal-01.jpg",
             "title": "Fractals",
             "main_caption": ""
         },
 		{
             "image_paths": ["/media/cgi_sortdonut-01.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/cgi_sortdonut-01.jpg",
             "title": "Sort Donut",
             "main_caption": ""
         },
         {
             "image_paths": ["/media/code_colorcube-01.jpg"],
             "captions": [],
-            "thumbnail_path": "/thumbs/code_colorcube-01.jpg",
             "title": "Color Cube",
             "main_caption": ""
         }
